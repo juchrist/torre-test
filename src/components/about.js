@@ -40,7 +40,7 @@ class About extends React.Component {
                           <div className="row">
                             <div className="col-lg-5">
                               <div className="position-relative">
-                                <img src="../images/juchrist2.JPG" alt="" className="radius-image img-fluid" style={{height: '350px'}} />
+                                <img src="../images/juchrist2.jpg" alt="" className="radius-image img-fluid" style={{height: '350px'}} />
                               </div>
                             </div>
                             <div className="col-lg-7 mt-lg-0 mt-5">
