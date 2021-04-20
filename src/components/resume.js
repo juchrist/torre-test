@@ -12,6 +12,15 @@ class Resume extends React.Component {
 		super(props);
 	}
 
+  componentWillMount(){
+    const jqscript = document.createElement("script");
+    const owlscript = document.createElement("script");
+    jqscript.src = "../js/jquery-3.3.1.min.js";
+    owlscript.src = "../js/owl.carousel.js";
+  
+    document.body.appendChild(jqscript);  
+    document.body.appendChild(owlscript);  
+  }
     
 
 	render() {
