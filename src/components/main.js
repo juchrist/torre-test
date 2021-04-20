@@ -12,6 +12,15 @@ class Main extends React.Component {
 		super(props);
 	}
 
+  componentDidMount(){
+    const jqscript = document.createElement("script");
+    const owlscript = document.createElement("script");
+    jqscript.src = "../js/jquery-3.3.1.min.js";
+    owlscript.src = "../js/owl.carousel.js";
+  
+    document.body.appendChild(jqscript);  
+    document.body.appendChild(owlscript);  
+  }
 	
 
 	render() {
@@ -38,7 +47,7 @@ class Main extends React.Component {
                         be able to learn, develop, maximize and utilize my passion, skills and intelligence to provide
                         solutions to real-life problems. I believe that I will be a valuable asset to your company and startup.</p>
                       <div className="mt-sm-5 mt-4">
-                        <a className="btn btn-primary btn-style mr-2" href="contact.html"> Contact Me </a>
+                        <a className="btn btn-primary btn-style mr-2" href="contact.html"> Contact Me</a>
                         <a className="btn btn-outline-primary btn-style mr-2" href="#portfolio">Resume </a>
                       </div>
                     </div>

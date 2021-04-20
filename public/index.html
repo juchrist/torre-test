@@ -36,7 +36,8 @@
 
     </div>
 
-    
+  </body>
+
   <!-- move top -->
   <button onclick="topFunction()" id="movetop" title="Go to top">
     <span class="fa fa-angle-up"></span>
@@ -65,10 +66,8 @@
 </section>
 <!-- //Footer -->
 
-<!-- all js scripts and files here -->
-<script src="%PUBLIC_URL%/js/theme-change.js" type="text/javascript"></script><!-- theme switch js (light and dark)-->
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script><!-- default jQuery -->
+<script src="%PUBLIC_URL%/js/jquery-3.3.1.min.js" type="text/javascript"></script><!-- default jQuery -->
 
 <!-- /typig-text-->
 <script type="text/javascript">
@@ -83,7 +82,7 @@
   let charIndex = 0;
 
   function type() {
-    if (charIndex <= textArray[textArrayIndex].length) {
+    if (charIndex < textArray[textArrayIndex].length) {
       if (!cursorSpan.classList.contains("typing")) 
       cursorSpan.classList.add("typing");
       typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
@@ -272,7 +271,5 @@
 
 <!-- bootstrap js -->
 <script src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
-
-  </body>
 
 </html>
