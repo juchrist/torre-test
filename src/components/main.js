@@ -1,7 +1,7 @@
 import React from 'react';
 import loadjs from 'loadjs';
-/*import { Link } from 'react-router-dom';
-import { loadOptions } from '@babel/core';
+import { Link } from 'react-router-dom';
+/*import { loadOptions } from '@babel/core';
 import Script from 'react-load-script';*/
 
 import Header from './header';
@@ -42,8 +42,8 @@ class Main extends React.Component {
                         be able to learn, develop, maximize and utilize my passion, skills and intelligence to provide
                         solutions to real-life problems. I believe that I will be a valuable asset to your company and startup.</p>
                       <div className="mt-sm-5 mt-4">
-                        <a className="btn btn-primary btn-style mr-2" href="contact.html"> Contact Me</a>
-                        <a className="btn btn-outline-primary btn-style mr-2" href="#portfolio">Resume </a>
+                        <Link className="btn btn-primary btn-style mr-2" to="contact"> Contact Me</Link>
+                        <Link className="btn btn-outline-primary btn-style mr-2" to="resume">Resume </Link>
                       </div>
                     </div>
                   </div>
