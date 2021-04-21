@@ -1,6 +1,6 @@
 import React from 'react';
-/*import loadjs from 'loadjs';
-import { Link } from 'react-router-dom';
+import loadjs from 'loadjs';
+/*import { Link } from 'react-router-dom';
 import { loadOptions } from '@babel/core';
 import Script from 'react-load-script';*/
 
@@ -12,14 +12,10 @@ class Resume extends React.Component {
 		super(props);
 	}
 
-  componentWillMount(){
-    const jqscript = document.createElement("script");
-    const owlscript = document.createElement("script");
-    jqscript.src = "../js/jquery-3.3.1.min.js";
-    owlscript.src = "../js/owl.carousel.js";
-  
-    document.body.appendChild(jqscript);  
-    document.body.appendChild(owlscript);  
+  componentWillMount() {
+    loadjs('/jquery-3.3.1.min.js', function() {
+        loadjs('/owl.carousel.js');
+    });
   }
     
 
