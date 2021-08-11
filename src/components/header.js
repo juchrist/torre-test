@@ -31,7 +31,7 @@ class Header extends React.Component {
                         <Link className="nav-link" to="about">Meet Me</Link>
                       </li>
                       <li className="nav-item @@resume__active">
-                        <a href="resume">Resume</a>
+                        <a className="nav-link" href="resume">Resume</a>
                       </li>
                       <li className="nav-item @@contact__active">
                         <Link className="nav-link" to="contact">Contact Me</Link>
