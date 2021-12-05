@@ -1,26 +1,24 @@
 import React from 'react';
-//import loadjs from 'loadjs';
+import loadjs from 'loadjs';
 import ReactDOM from 'react-dom';
-//import { Link } from 'react-router-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './css/style-starter.css';
-import About from './components/about';
-import Main from './components/main';
-import Resume from './components/resume';
-import Contact from './components/contact';
+import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import Error from './components/404';
+//import Register from './controllers/register';
+import Profile from './components/profile';
+import Header from './components/header';
 import * as serviceWorker from './serviceWorker';
-/*<Route path='/state/:name' component={State} />
-<Route path='/about' component={About} />
-<Route path='/api' component={Api} />*/
 
 
 ReactDOM.render(
 	<Router>
 		<div>
-			<Route exact path='/' component={Main} />
-			<Route path='/about' component={About} />
-			<Route path='/resume' component={Resume} />
-			<Route path='/contact' component={Contact} />
+		<Switch>
+			<Route exact path='/' component={Header} />
+			<Route  path='/p/:username' component={Profile} />
+			<Route path='*' component={Error} />
+		</Switch>
 		</div>
 	</Router>,
 document.getElementById('root'));

@@ -13,9 +13,8 @@ class Resume extends React.Component {
 	}
 
   componentWillMount() {
-    loadjs('/jquery-3.3.1.min.js', function() {
-        loadjs('/owl.carousel.js');
-    });
+    loadjs('../jquery-3.3.1.min.js');
+        loadjs('../owl.carousel.js');
   }
     
 
