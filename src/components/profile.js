@@ -18,7 +18,7 @@ class Profile extends React.Component {
 		];
 
 //    fetch('https://bio.torre.co/api/bios/'+ this.props.match.params.username)
-fetch('http://bio.torre.co/api/bios/kingjuwon4christ',
+fetch('https://bio.torre.co/api/bios/kingjuwon4christ',
 {
   mode: 'cors',
   method: 'GET',
