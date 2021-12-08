@@ -18,15 +18,15 @@ class Profile extends React.Component {
 		];
 
 //    fetch('https://bio.torre.co/api/bios/'+ this.props.match.params.username)
-fetch('https://torre.bio/api/bios/kingjuwon4christ',
-{
+fetch('https://torre.bio/api/bios/kingjuwon4christ'//,
+/*{
   mode: 'no-cors',
   method: 'GET',
   cache: 'no-cache',
   headers: {
     'Content-Type': 'application/json'
   }
-})
+}*/)
 .then(response => {
     console.log(response);
       return response.json();
